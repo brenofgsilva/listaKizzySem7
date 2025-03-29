@@ -254,6 +254,32 @@ Pedidos entre R$50,00 e R$199,99 (inclusive) → "Frete com custo adicional!"
 Pedidos de R$200,00 ou mais → "Frete grátis!"
 ```
 Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
+
+
+```
+algoritmo catOrders
+inicio
+
+// definindo variáveis
+var order1 = 23,50
+var order2 = 72,80
+var order3 = 210
+
+leia(order1)
+se (order1) < 50 então
+  escreva("Frete não disponível :c")
+
+leia(order2)
+se (order2) > 50 e < 199,99 então
+  escreva("Frete com custo adicional >:(")
+
+leia(order3)
+se (order3) >= 200 então
+  escreva("Frete grátis '-')b")
+
+fim
+
+```
 ______
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
